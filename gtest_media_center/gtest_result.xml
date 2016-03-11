@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="11" failures="2" disabled="0" errors="0" timestamp="2015-08-10T11:39:00" time="39.938" name="AllTests">
+  <testsuite name="media_center_test" tests="11" failures="2" disabled="0" errors="0" time="39.936">
+    <testcase name="test_interface_init_media_center" status="run" time="0.276" classname="media_center_test" />
+    <testcase name="test_interface_set_net_state" status="run" time="0.002" classname="media_center_test" />
+    <testcase name="test_create_media_handle" status="run" time="0.004" classname="media_center_test" />
+    <testcase name="test_interface_get_media_info" status="run" time="3.008" classname="media_center_test" />
+    <testcase name="test_interface_get_stream_info" status="run" time="0.001" classname="media_center_test" />
+    <testcase name="test_interface_start_stream_service" status="run" time="0.009" classname="media_center_test">
+      <failure message="e:\p2p_client_platform\matrix1.8\media_center\build\windows\gtest_media_center\media_center_test.cpp:179&#x0A;Value of: start_stream_service(handle, 0, STREAM_HLS_MODE, 18080)&#x0A;  Actual: -2&#x0A;Expected: 0" type=""><![CDATA[e:\p2p_client_platform\matrix1.8\media_center\build\windows\gtest_media_center\media_center_test.cpp:179
+Value of: start_stream_service(handle, 0, STREAM_HLS_MODE, 18080)
+  Actual: -2
+Expected: 0]]></failure>
+    </testcase>
+    <testcase name="test_interface_stop_stream_service" status="run" time="0.12" classname="media_center_test" />
+    <testcase name="test_interface_get_handle_state" status="run" time="3.127" classname="media_center_test">
+      <failure message="e:\p2p_client_platform\matrix1.8\media_center\build\windows\gtest_media_center\media_center_test.cpp:204&#x0A;Value of: get_handle_state(handle)&#x0A;  Actual: 0&#x0A;Expected: MEDIA_HANDLE_RUNNABLE&#x0A;Which is: 1" type=""><![CDATA[e:\p2p_client_platform\matrix1.8\media_center\build\windows\gtest_media_center\media_center_test.cpp:204
+Value of: get_handle_state(handle)
+  Actual: 0
+Expected: MEDIA_HANDLE_RUNNABLE
+Which is: 1]]></failure>
+    </testcase>
+    <testcase name="test_get_download_speed" status="run" time="15.185" classname="media_center_test" />
+    <testcase name="test_get_download_percent" status="run" time="15.143" classname="media_center_test" />
+    <testcase name="test_interface_media_center_cleanup" status="run" time="3.04" classname="media_center_test" />
+  </testsuite>
+</testsuites>
